@@ -15,7 +15,7 @@ def install_and_import(package):
             print(f"Failed to install {package}. Please install it manually.")
 
 # List of required packages
-required_packages = ['pandas', 'pyautogui', 'pyperclip', 'keyboard']
+required_packages = ['pandas', 'pyautogui', 'pyperclip', 'keyboard', 'openpyxl']
 
 # Attempt to import or install each package
 for package in required_packages:
