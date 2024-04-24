@@ -58,4 +58,5 @@ Obsługa:
 * po odpaleniu skryptu, i zakończeniu odliczania najedź na przycisk "Dodaj", i na klawiaturze wciśnij Q - usłyszysz krótki beep
 * następnie najedź na *wszystkie pola* w formularzu (pomiń ikonkę kalendarza) i również wiśnij Q - usłyszysz krótki beep po każdym wciśnięciu
 * sit back and relax
+
 Aby przerwać przytrzymaj Escape albo zamknij okno z programem
