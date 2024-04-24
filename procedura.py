@@ -99,16 +99,9 @@ def procedurki(file_name: str, file_type: str,  stop_index: int = None, start_in
 
     wiersz = 0
 
-    for n in range(3):
-        winsound.Beep(1000, 100)
-        time.sleep(0.9)
-        if keyboard.is_pressed('esc'):  # Check if Escape key is pressed
-            winsound.Beep(3000, 50)
-            winsound.Beep(3000, 50)
-            winsound.Beep(3000, 50)
-            print('Zatrzymano program')
-            exit()
-    winsound.Beep(1000, 1000)
+    odpalanie_wrotek = pyautogui.confirm(text=f'Procedur do wpisania = {len(df_full)}', title='chwdsmk', buttons=['OK', 'Anuluj'])
+    if odpalanie_wrotek = 'Anuluj':
+        exit()
 
     print('Pola:', pola_pos)
     loop_start_time = time.time()
@@ -163,7 +156,5 @@ def procedurki(file_name: str, file_type: str,  stop_index: int = None, start_in
         time.sleep(loop_delay)
         wiersz += 1
         pyautogui.click(dodaj_pos)
-    print(f'Dodano {wiersz} procedur w czasie {time.time()-loop_start_time}s')
-    winsound.Beep(3000, 50)
-    winsound.Beep(3000, 50)
-    winsound.Beep(3000, 50)
+    pyautogui.alert(text='Dodano {wiersz} procedur w czasie {time.time()-loop_start_time}s', title='chwdsmk', button='OK')
+
