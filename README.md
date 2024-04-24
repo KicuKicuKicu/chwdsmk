@@ -4,8 +4,9 @@ Wymagania do odpalenia:
 
 * Zainstalowanie Pythona - https://www.python.org/downloads/
 * Umieszczenie w folderze pliku źródłowego
-* Włączenie wiersza polecenia - z menu 'Start' albo za pomocą Win+R -> cmd
+* Włączenie wiersza polecenia - z menu 'Start' albo za pomocą Win+R [Windows] lub aplikacji Teminal [Mac]
 * wklepanie w tym okienku:
+
 > cd (adres folderu)
 
 np:
@@ -16,6 +17,8 @@ włączenie Pythona
 
 gdy python się włączy:
 > import procedura
+
+Pierwsze odpalenie będzie trwało chwilę dłużej, pobrane zostaną rozszerzenia wymagane do uruchomienia programu
 
 #################
 
@@ -45,12 +48,14 @@ Instrukcja do odpalania:
      
      start_delay = czas pomiędzy uruchomieniem skryptu a rozpoczęciem programu; Domyślnie 3[s]
      
-     start_delay = czas pomiędzy kolejnymi akcjami skryptu w sekundach; Domyślnie 0.1[s]
+     loop_delay = czas pomiędzy kolejnymi akcjami skryptu w sekundach; Domyślnie 0.1[s]
      
 --> przykładowo: procedura.procedurki("ekg", "xlsx", 10, 0, 4, 0.5)
 
+--> przykładowo: procedura.procedurki("usg", "csv", stop_index = 100, start_delay = 2, loop_delay = 0.5)
+
 Obsługa:
-* po odpaleniu skryptu, i zakończeniu odliczania najedź na przycisk "Dodaj", i na klawiaturze wciśnij Q
-* następnie najedź na *wszystkie pola* w formularzu (pomiń ikonkę kalendarza) i również wiśnij Q
+* po odpaleniu skryptu, i zakończeniu odliczania najedź na przycisk "Dodaj", i na klawiaturze wciśnij Q - usłyszysz krótki beep
+* następnie najedź na *wszystkie pola* w formularzu (pomiń ikonkę kalendarza) i również wiśnij Q - usłyszysz krótki beep po każdym wciśnięciu
 * sit back and relax
-* Aby przerwać przytrzymaj Escape albo zamknij okno z programem
+Aby przerwać przytrzymaj Escape albo zamknij okno z programem
