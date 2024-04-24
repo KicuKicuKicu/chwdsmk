@@ -1,3 +1,4 @@
+import script_setup
 import pandas as pd
 import pyautogui
 import time
@@ -5,7 +6,7 @@ import keyboard
 import pyperclip
 import winsound
 from typing import Union
-import script_setup
+
 
 
 print('\nWymagania co do pliku źródłowego:')
